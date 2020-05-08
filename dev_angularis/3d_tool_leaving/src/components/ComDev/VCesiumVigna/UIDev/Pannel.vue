@@ -42,7 +42,7 @@ export default class UIDevPannel extends Vue {
   private mvly([x, y, z]: number[]) {
     const ly = (this as any)[this.ly_mv_name];
     if (!ly) {
-      console.log('无此图层');
+      console.log('无此图层'); 
       return;
     }
     ly.root.transform[12] += x * 1;
@@ -107,7 +107,7 @@ export default class UIDevPannel extends Vue {
     // await this._load_3dtile_model();
 
     // this.toggle_terr();
-    this.toggle_boundingbox();
+    // this.toggle_boundingbox();
   }
 }
 </script>
